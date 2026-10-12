@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="L'Épicure Gourmet - Restaurant gastronomique français & saveurs du monde. Réservez votre table en ligne.">
+    <title>L'Épicure Gourmet | Restaurant Gastronomique</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Feuille de style externe -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         1. EN-TÊTE (HEADER)
+         ========================================== -->
+    <header class="site-header" id="site-header">
+        <div class="container header-container">
+            <!-- Logo & Nom du restaurant -->
+            <a href="#accueil" class="brand-logo" id="brand-logo-link">
+                <div class="logo-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div class="brand-text">
+                    <span class="brand-name">L'Épicure</span>
+                    <span class="brand-tagline">Gourmet</span>
+                </div>
+            </a>
+
+            <!-- Menu de navigation principal -->
+            <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+                <ul class="nav-list">
+                    <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                    <li><a href="#a-propos" class="nav-link">À propos</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#galerie" class="nav-link">Galerie</a></li>
+                    <li><a href="#temoignages" class="nav-link">Avis</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Actions d'en-tête (Thème & Mobile) -->
+            <div class="header-actions">
+                <!-- Bouton Changement de thème (Clair/Sombre) -->
+                <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" title="Changer le thème" aria-label="Basculer entre thème clair et sombre">
+                    <i class="fa-solid fa-moon icon-moon"></i>
+                    <i class="fa-solid fa-sun icon-sun"></i>
+                </button>
+
+                <!-- Bouton de réservation rapide -->
+                <a href="#contact" class="btn btn-outline-gold header-cta">Réservation</a>
+
+                <!-- Bouton Hamburger Mobile -->
+                <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Ouvrir le menu mobile" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================
+             2. SECTION ACCUEIL (HERO BANNER)
+             ========================================== -->
+        <section class="hero-section" id="accueil">
+            <div class="hero-overlay"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge-subtitle"><i class="fa-solid fa-star"></i> Haute Gastronomie & Authenticité</span>
+                    <h1 class="hero-title">Une Expérience Culinaire Révélée Par la Passion</h1>
+                    <p class="hero-slogan">"L'alliance raffinée du terroir français et des essences exotiques d'exception."</p>
+                    <p class="hero-description">
+                        Bienvenue chez L'Épicure Gourmet. Découvrez une cuisine inventive où la fraîcheur des produits d'exception s'associe à l'élégance du savoir-faire gastronomique.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-gold btn-lg"><i class="fa-regular fa-calendar-check"></i> Réserver une table</a>
+                        <a href="#menu" class="btn btn-glass btn-lg"><i class="fa-solid fa-book-open"></i> Découvrir le Menu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <a href="#a-propos" aria-label="Défiler vers la section À Propos">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             3. SECTION À PROPOS
+             ========================================== -->
+        <section class="about-section section-padding" id="a-propos">
+            <div class="container">
+                <div class="grid grid-2-cols align-center gap-large">
+                    <!-- Images À propos -->
+                    <div class="about-images-wrapper">
+                        <div class="about-img-primary">
+                            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Salle du restaurant L'Épicure" loading="lazy">
+                        </div>
+                        <div class="about-img-secondary">
+                            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=600&q=80" alt="Chef cuisinier en préparation" loading="lazy">
+                        </div>
+                        <div class="about-experience-badge">
+                            <span class="years">15+</span>
+                            <span class="text">Ans d'Excellence</span>
+                        </div>
+                    </div>
+
+                    <!-- Contenu À propos -->
+                    <div class="about-content">
+                        <div class="section-header text-left">
+                            <span class="section-subtitle">Notre Histoire & Philosophie</span>
+                            <h2 class="section-title">La passion de la table et du goût partagé</h2>
+                        </div>
+                        <p class="lead-text">
+                            Fondé en 2011 par le Chef Alexandre Dubois, <strong>L'Épicure Gourmet</strong> est né d'un rêve simple : offrir un voyage gustatif inoubliable au cœur d'une ambiance chaleureuse et raffinée.
+                        </p>
+                        <p class="body-text">
+                            Chaque jour, notre brigade sélectionne les meilleurs ingrédients auprès de producteurs locaux passionnés. Nous mettons un point d'honneur à réinventer les classiques avec une touche créative audacieuse et des nectars authentiques.
+                        </p>
+
+                        <!-- Nos valeurs et spécialités -->
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+                                <div class="feature-text">
+                                    <h3>Produits Bio & Locaux</h3>
+                                    <p>100% de nos ingrédients sont issus de l'agriculture biologique et des circuits courts.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fa-solid fa-award"></i></div>
+                                <div class="feature-text">
+                                    <h3>Spécialités Signature</h3>
+                                    <p>Des créations uniques mariant tradition française et nectars artisanaux du monde.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fa-solid fa-heart"></i></div>
+                                <div class="feature-text">
+                                    <h3>Accueil Privilégié</h3>
+                                    <p>Une équipe attentionnée pour transformer chaque repas en un moment d'exception.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             4. SECTION MENU (MINIMUM 8 PLATS)
+             ========================================== -->
+        <section class="menu-section section-padding bg-alt" id="menu">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Délices Culinaire</span>
+                    <h2 class="section-title">Notre Carte & Menus d'Exception</h2>
+                    <p class="section-description">
+                        Une sélection raffinée d'entrées fraîches, de plats gourmands, de desserts enchanteurs et de boissons artisanales.
+                    </p>
+                </div>
+
+                <!-- Filtres du menu (JS interactive) -->
+                <div class="menu-filters" id="menu-filters">
+                    <button type="button" class="filter-btn active" data-filter="all">Tous les délices</button>
+                    <button type="button" class="filter-btn" data-filter="entrees">Entrées</button>
+                    <button type="button" class="filter-btn" data-filter="plats">Plats principaux</button>
+                    <button type="button" class="filter-btn" data-filter="desserts">Desserts</button>
+                    <button type="button" class="filter-btn" data-filter="boissons">Boissons</button>
+                </div>
+
+                <!-- Grille des plats du menu -->
+                <div class="menu-grid" id="menu-grid">
+                    <!-- Plat 1 : Entrée -->
+                    <article class="menu-card" data-category="entrees">
+                        <div class="menu-card-img">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Foie Gras Poêlé aux Figues" loading="lazy">
+                            <span class="dish-badge">Chef's Choice</span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-title">Foie Gras Poêlé aux Figues</h3>
+                                <span class="dish-price">24,00 €</span>
+                            </div>
+                            <p class="dish-description">Foie gras de canard poêlé, chutney de figues fraîches au miel d'acacia et brioche tiède grillée.</p>
+                        </div>
+                    </article>
+
+                    <!-- Plat 2 : Entrée -->
+                    <article class="menu-card" data-category="entrees">
+                        <div class="menu-card-img">
+                            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=600&q=80" alt="Velouté de Potimarron & Truffe" loading="lazy">
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-title">Velouté de Potimarron & Truffe</h3>
+                                <span class="dish-price">18,00 €</span>
+                            </div>
+                            <p class="dish-description">Potimarron bio velouté, brisures de truffe noire de Périgord, émulsion d'isigny et noisettes torréfiées.</p>
+                        </div>
+                    </article>
+
+                    <!-- Plat 3 : Plat principal -->
+                    <article class="menu-card" data-category="plats">
+                        <div class="menu-card-img">
+                            <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=600&q=80" alt="Filet de Bœuf Rossini" loading="lazy">
+                            <span class="dish-badge">Best-Seller</span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-title">Filet de Bœuf Rossini</h3>
+                                <span class="dish-price">38,00 €</span>
+                            </div>
+                            <p class="dish-description">Filet de bœuf Charolais, médaillon de foie gras poêlé, jus réduit au Madère et mousseline de pommes de terre.</p>
+                        </div>
+                    </article>
+
+                    <!-- Plat 4 : Plat principal -->
+                    <article class="menu-card" data-category="plats">
+                        <div class="menu-card-img">
+                            <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80" alt="Saint-Jacques & Risotto Safran" loading="lazy">
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-title">Saint-Jacques & Risotto Safran</h3>
+                                <span class="dish-price">34,00 €</span>
+                            </div>
+                            <p class="dish-description">Noix de Saint-Jacques fraîches dorées à la fleur de sel, risotto creamy au safran d'Iran et parmesan de 24 mois.</p>
+                        </div>
+                    </article>
+
+                    <!-- Plat 5 : Dessert -->
+                    <article class="menu-card" data-category="desserts">
+                        <div class="menu-card-img">
+                            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" alt="Soufflé Chaud Chocolat Grand Cru" loading="lazy">
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-title">Soufflé Chaud Chocolat Grand Cru</h3>
+                                <span class="dish-price">16,00 €</span>
+                            </div>
+                            <p class="dish-description">Cœur fondant au chocolat noir Valrhona 70%, glace artisanale à la vanille Bourbon de Madagascar.</p>
+                        </div>
+                    </article>
+
+                    <!-- Plat 6 : Dessert -->
+                    <article class="menu-card" data-category="desserts">
+                        <div class="menu-card-img">
+                            <img src="https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=600&q=80" alt="Tarte Fine aux Pommes Bio" loading="lazy">
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-title">Tarte Fine aux Pommes Bio</h3>
+                                <span class="dish-price">14,00 €</span>
+                            </div>
+                            <p class="dish-description">Pâte feuilletée croustillante au beurre AOP, pommes caramélisées et sorbet artisanale à la pomme verte.</p>
+                        </div>
+                    </article>
+
+                    <!-- Plat 7 : Boisson -->
+                    <article class="menu-card" data-category="boissons">
+                        <div class="menu-card-img">
+                            <img src="images/ditakh.jpg" alt="Jus de Ditakh Artisanal" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80'">
+                            <span class="dish-badge specialty">Exotique</span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-title">Jus de Ditakh Artisanal</h3>
+                                <span class="dish-price">8,00 €</span>
+                            </div>
+                            <p class="dish-description">Boisson naturelle et rafraîchissante au fruit de Ditakh bio, pointe de menthe fraîche et sirop d'agave naturel.</p>
+                        </div>
+                    </article>
+
+                    <!-- Plat 8 : Boisson -->
+                    <article class="menu-card" data-category="boissons">
+                        <div class="menu-card-img">
+                            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80" alt="Cocktail Signature Épicure Gold" loading="lazy">
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-title">Cocktail "Épicure Gold"</h3>
+                                <span class="dish-price">15,00 €</span>
+                            </div>
+                            <p class="dish-description">Gin artisanal infusé aux agrumes, liqueur de fleur de sureau, champagne brut et paillettes d'or comestibles.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             5. GALERIE (MINIMUM 8 IMAGES CONFORME CSS GRID/FLEXBOX)
+             ========================================== -->
+        <section class="gallery-section section-padding" id="galerie">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Immersion Visuelle</span>
+                    <h2 class="section-title">Galerie du Restaurant</h2>
+                    <p class="section-description">
+                        Découvrez l'ambiance feutrée de notre établissement, nos assiettes d'art et la sérénité de nos salons.
+                    </p>
+                </div>
+
+                <!-- Grille CSS Grid de la galerie -->
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Photo 1 : Plat -->
+                    <div class="gallery-item" data-title="Assiette Gastronomique">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Assiette gastronomique d'exception" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>Plats d'Exception</span>
+                        </div>
+                    </div>
+
+                    <!-- Photo 2 : Salle -->
+                    <div class="gallery-item" data-title="La Salle Principale">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Salle de restaurant élégante" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>La Salle de Restaurant</span>
+                        </div>
+                    </div>
+
+                    <!-- Photo 3 : Dessert -->
+                    <div class="gallery-item" data-title="Création Pâtissière">
+                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80" alt="Dessert pâtissier haut de gamme" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>Douceurs & Desserts</span>
+                        </div>
+                    </div>
+
+                    <!-- Photo 4 : Boissons -->
+                    <div class="gallery-item" data-title="Cocktails Artisanal">
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80" alt="Cocktails et nectars artisanaux" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>Cocktails & Nectars</span>
+                        </div>
+                    </div>
+
+                    <!-- Photo 5 : Cuisine -->
+                    <div class="gallery-item" data-title="Brigade de Cuisine">
+                        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80" alt="Préparation en cuisine par le Chef" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>En Cuisine</span>
+                        </div>
+                    </div>
+
+                    <!-- Photo 6 : Plat Poisson -->
+                    <div class="gallery-item" data-title="Tartare de Saumon">
+                        <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80" alt="Tartare de poisson frais" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>Fraîcheur Marine</span>
+                        </div>
+                    </div>
+
+                    <!-- Photo 7 : Terrasse -->
+                    <div class="gallery-item" data-title="Espace VIP & Lounge">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Espace VIP privatise" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>Salons Privés</span>
+                        </div>
+                    </div>
+
+                    <!-- Photo 8 : Jus Artisanal -->
+                    <div class="gallery-item" data-title="Nectar Frais Ditakh">
+                        <img src="images/ditakh.jpg" alt="Verre de jus frais rafraîchissant" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=800&q=80'">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>Jus & Rafraîchissements</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal pour la Galerie -->
+        <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true" role="dialog">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Fermer la vue agrandie">&times;</button>
+            <div class="lightbox-content">
+                <img id="lightbox-img" src="" alt="Image agrandie">
+                <p id="lightbox-caption" class="lightbox-caption"></p>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             6. SECTION TÉMOIGNAGES (MINIMUM 3 AVIS)
+             ========================================== -->
+        <section class="testimonials-section section-padding bg-alt" id="temoignages">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">La Parole à Nos Clients</span>
+                    <h2 class="section-title">Avis & Expériences Vécues</h2>
+                    <p class="section-description">
+                        Lisez les témoignages de ceux qui ont partagé un moment gourmand à notre table.
+                    </p>
+                </div>
+
+                <div class="grid grid-3-cols gap-medium">
+                    <!-- Témoignage 1 -->
+                    <article class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Un moment tout simplement magique ! Le filet de bœuf Rossini était d'une tendreté inégalée et le jus de Ditakh artisanal apporte une touche exotique absolument sublime. Le service est irréprochable."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Avatar de Sophie Martin" class="author-avatar" loading="lazy">
+                            <div class="author-info">
+                                <h3 class="author-name">Sophie Martin</h3>
+                                <span class="author-role">Critique Gastronomique</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Témoignage 2 -->
+                    <article class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Nous avons fêté notre anniversaire de mariage chez L'Épicure. Le cadre est somptueux, chaleureux et féerique. Mention spéciale au soufflé chaud au chocolat qui a clôturé cette soirée en beauté."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Avatar de Marc & Hélène Morel" class="author-avatar" loading="lazy">
+                            <div class="author-info">
+                                <h3 class="author-name">Marc & Hélène Morel</h3>
+                                <span class="author-role">Fidèles épicuriens</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Témoignage 3 -->
+                    <article class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Des saveurs authentiques, une présentation digne des plus grands chefs étoilés. Une adresse incontournable pour quiconque recherche le véritable raffinement culinaire."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Avatar d'Amadou Diallo" class="author-avatar" loading="lazy">
+                            <div class="author-info">
+                                <h3 class="author-name">Amadou Diallo</h3>
+                                <span class="author-role">Amateur de haute cuisine</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             7. FORMULAIRE DE CONTACT & RÉSERVATION
+             ========================================== -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <div class="grid grid-2-cols gap-large align-center">
+                    <!-- Informations de réservation & contact -->
+                    <div class="contact-info-wrapper">
+                        <div class="section-header text-left">
+                            <span class="section-subtitle">Réservez Votre Moment</span>
+                            <h2 class="section-title">Réservez une Table en Quelques Clics</h2>
+                        </div>
+                        <p class="body-text">
+                            Pour garantir une expérience d'exception, nous recommandons la réservation préalable de votre table. Complétez le formulaire ci-contre pour valider votre venue.
+                        </p>
+
+                        <div class="contact-cards-list">
+                            <div class="contact-info-card">
+                                <div class="card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="card-text">
+                                    <h3>Notre Adresse</h3>
+                                    <p>45 Avenue des Champs-Élysées, 75008 Paris, France</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-card">
+                                <div class="card-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="card-text">
+                                    <h3>Téléphone</h3>
+                                    <p>+33 (0)1 42 68 55 00</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-card">
+                                <div class="card-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="card-text">
+                                    <h3>Email Direct</h3>
+                                    <p>contact@lepicure-gourmet.fr</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-card">
+                                <div class="card-icon"><i class="fa-solid fa-clock"></i></div>
+                                <div class="card-text">
+                                    <h3>Horaires du Service</h3>
+                                    <p>Mardi au Dimanche : 12h00 - 14h30 | 19h00 - 23h00<br><small>(Fermé le Lundi)</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulaire interactif conforme au cahier des charges -->
+                    <div class="contact-form-container">
+                        <form id="reservation-form" class="reservation-form" novalidate>
+                            <h3 class="form-title"><i class="fa-solid fa-utensils"></i> Formulaire de Réservation</h3>
+                            
+                            <div class="form-row">
+                                <!-- Nom -->
+                                <div class="form-group">
+                                    <label for="nom">Nom <span class="required">*</span></label>
+                                    <input type="text" id="nom" name="nom" class="form-control" placeholder="Votre nom" required>
+                                    <span class="error-message" id="error-nom">Veuillez indiquer votre nom.</span>
+                                </div>
+
+                                <!-- Prénom -->
+                                <div class="form-group">
+                                    <label for="prenom">Prénom <span class="required">*</span></label>
+                                    <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Votre prénom" required>
+                                    <span class="error-message" id="error-prenom">Veuillez indiquer votre prénom.</span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!-- Email -->
+                                <div class="form-group">
+                                    <label for="email">Adresse Email <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="exemple@domaine.com" required>
+                                    <span class="error-message" id="error-email">Entrez une adresse email valide.</span>
+                                </div>
+
+                                <!-- Téléphone -->
+                                <div class="form-group">
+                                    <label for="telephone">Téléphone <span class="required">*</span></label>
+                                    <input type="tel" id="telephone" name="telephone" class="form-control" placeholder="06 12 34 56 78" required>
+                                    <span class="error-message" id="error-telephone">Numéro de téléphone requis.</span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!-- Nombre de personnes -->
+                                <div class="form-group">
+                                    <label for="personnes">Nombre de personnes <span class="required">*</span></label>
+                                    <select id="personnes" name="personnes" class="form-control" required>
+                                        <option value="">Sélectionnez...</option>
+                                        <option value="1">1 personne</option>
+                                        <option value="2">2 personnes (Tête-à-tête)</option>
+                                        <option value="3">3 personnes</option>
+                                        <option value="4">4 personnes</option>
+                                        <option value="5">5 personnes</option>
+                                        <option value="6+">6 personnes ou plus (Groupe)</option>
+                                    </select>
+                                    <span class="error-message" id="error-personnes">Veuillez choisir le nombre d'invités.</span>
+                                </div>
+
+                                <!-- Date de réservation -->
+                                <div class="form-group">
+                                    <label for="date_reservation">Date de réservation <span class="required">*</span></label>
+                                    <input type="date" id="date_reservation" name="date_reservation" class="form-control" required>
+                                    <span class="error-message" id="error-date_reservation">Veuillez sélectionner une date.</span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!-- Heure -->
+                                <div class="form-group">
+                                    <label for="heure">Heure souhaitée <span class="required">*</span></label>
+                                    <select id="heure" name="heure" class="form-control" required>
+                                        <option value="">Sélectionnez l'heure...</option>
+                                        <optgroup label="Déjeuner">
+                                            <option value="12:00">12:00</option>
+                                            <option value="12:30">12:30</option>
+                                            <option value="13:00">13:00</option>
+                                            <option value="13:30">13:30</option>
+                                        </optgroup>
+                                        <optgroup label="Dîner">
+                                            <option value="19:00">19:00</option>
+                                            <option value="19:30">19:30</option>
+                                            <option value="20:00">20:00</option>
+                                            <option value="20:30">20:30</option>
+                                            <option value="21:00">21:00</option>
+                                        </optgroup>
+                                    </select>
+                                    <span class="error-message" id="error-heure">Sélectionnez l'heure de réservation.</span>
+                                </div>
+                            </div>
+
+                            <!-- Message / Demandes particulières -->
+                            <div class="form-group">
+                                <label for="message">Message ou demandes particulières</label>
+                                <textarea id="message" name="message" class="form-control" rows="3" placeholder="Allergies, terrasse, événement spécial..."></textarea>
+                            </div>
+
+                            <!-- Boutons de soumission et réinitialisation -->
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-gold btn-full"><i class="fa-solid fa-paper-plane"></i> Envoyer ma réservation</button>
+                                <button type="reset" id="btn-reset" class="btn btn-secondary btn-full"><i class="fa-solid fa-rotate-left"></i> Réinitialiser</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal d'Alerte / Message de Confirmation après envoi -->
+    <div class="modal-overlay" id="confirmation-modal" aria-hidden="true" role="dialog">
+        <div class="modal-card">
+            <div class="modal-icon-success">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="modal-title">Réservation Confirmée !</h3>
+            <p class="modal-body-text" id="modal-response-message">
+                Merci <span id="modal-client-name"></span> ! Votre demande de réservation a bien été enregistrée pour le <strong id="modal-res-date"></strong> à <strong id="modal-res-time"></strong>. Un email de confirmation vient de vous être envoyé.
+            </p>
+            <button type="button" class="btn btn-gold modal-close-btn" id="modal-close-btn">Fermer</button>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         8. PIED DE PAGE (FOOTER)
+         ========================================== -->
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div class="grid grid-4-cols gap-large">
+                <!-- Branding Footer -->
+                <div class="footer-col footer-about">
+                    <a href="#accueil" class="brand-logo footer-logo">
+                        <div class="logo-icon"><i class="fa-solid fa-utensils"></i></div>
+                        <div class="brand-text">
+                            <span class="brand-name">L'Épicure</span>
+                            <span class="brand-tagline">Gourmet</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc">
+                        L'art culinaire sublimé par la passion du goût et la sélection d'ingrédients d'exception.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="TripAdvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+                        <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Navigation rapide -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#accueil"><i class="fa-solid fa-chevron-right"></i> Accueil</a></li>
+                        <li><a href="#a-propos"><i class="fa-solid fa-chevron-right"></i> À propos</a></li>
+                        <li><a href="#menu"><i class="fa-solid fa-chevron-right"></i> Notre Menu</a></li>
+                        <li><a href="#galerie"><i class="fa-solid fa-chevron-right"></i> Galerie photo</a></li>
+                        <li><a href="#temoignages"><i class="fa-solid fa-chevron-right"></i> Avis Clients</a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i> Contact & Réservations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Horaires -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Horaires d'Ouverture</h4>
+                    <ul class="opening-hours">
+                        <li><span>Lundi :</span> <span class="closed">Fermé</span></li>
+                        <li><span>Mardi - Vendredi :</span> <span>12h00 - 14h30<br>19h00 - 23h00</span></li>
+                        <li><span>Samedi - Dimanche :</span> <span>12h00 - 15h00<br>19h00 - 23h30</span></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Newsletter -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact Rapide</h4>
+                    <p class="footer-contact-item"><i class="fa-solid fa-location-dot"></i> 45 Av. des Champs-Élysées, Paris</p>
+                    <p class="footer-contact-item"><i class="fa-solid fa-phone"></i> +33 (0)1 42 68 55 00</p>
+                    <p class="footer-contact-item"><i class="fa-solid fa-envelope"></i> contact@lepicure-gourmet.fr</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 L'Épicure Gourmet. Tous droits réservés. Projet réalisé selon le Cahier des Charges.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fichier JavaScript externe -->
+    <script src="js/main.js"></script>
+</body>
+</html>
